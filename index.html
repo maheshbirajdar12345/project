@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Tools Information</title>
+    <title>Network Security: IDS/IPS and Firewalls</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,117 +40,39 @@
             line-height: 1.6;
             color: #555;
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 12px;
-        }
-
-        li strong {
-            color: #343a40;
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>DevOps Tools Information</h1>
+        <h1>Network Security: IDS/IPS and Firewalls</h1>
     </header>
 
     <section>
-        <h2>Continuous Integration Tools</h2>
-        <p>Continuous Integration (CI) tools are used to automate the process of code integration and testing.</p>
+        <h2>Intrusion Detection System (IDS) and Intrusion Prevention System (IPS)</h2>
+        <p>An Intrusion Detection System (IDS) monitors network or system activities for malicious activities or policy violations. It operates in a passive mode, alerting administrators to potential threats. Key features of IDS include:</p>
         <ul>
-            <li><strong>Jenkins:</strong> An open-source automation server.</li>
-            <li><strong>Travis CI:</strong> A CI service that integrates with GitHub repositories.</li>
-            <li><strong>CircleCI:</strong> A cloud-based CI/CD service.</li>
-            <li><strong>GitLab CI/CD:</strong> Integrated CI/CD platform built into GitLab.</li>
+            <li>Packet analysis and monitoring</li>
+            <li>Signature-based detection</li>
+            <li>Anomaly-based detection</li>
+            <li>Alerts and notifications</li>
         </ul>
+
+        <p>Intrusion Prevention System (IPS) goes a step further by actively blocking or preventing identified threats. It combines the features of IDS with real-time threat prevention mechanisms.</p>
     </section>
 
     <section>
-        <h2>Configuration Management Tools</h2>
-        <p>Configuration Management tools help manage and provision infrastructure as code.</p>
+        <h2>Firewalls</h2>
+        <p>A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks. Key features of firewalls include:</p>
         <ul>
-            <li><strong>Ansible:</strong> An open-source automation tool for configuration management.</li>
-            <li><strong>Chef:</strong> A powerful automation platform that manages infrastructure as code.</li>
-            <li><strong>Puppet:</strong> A configuration management tool for deploying, configuring, and managing servers.</li>
-            <li><strong>SaltStack:</strong> Automation and configuration management tool.</li>
+            <li>Packet filtering</li>
+            <li>Stateful inspection</li>
+            <li>Proxy services</li>
+            <li>Network Address Translation (NAT)</li>
+            <li>Virtual Private Network (VPN) support</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>Containerization Tools</h2>
-        <p>Containerization tools enable packaging applications and their dependencies into containers.</p>
-        <ul>
-            <li><strong>Docker:</strong> An open platform for developing, shipping, and running applications in containers.</li>
-            <li><strong>Kubernetes:</strong> An open-source container orchestration platform.</li>
-            <li><strong>OpenShift:</strong> Kubernetes container platform with enterprise features.</li>
-            <li><strong>Podman:</strong> Container management tool.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Collaboration and Communication Tools</h2>
-        <p>Tools to facilitate communication and collaboration within development and operations teams.</p>
-        <ul>
-            <li><strong>Slack:</strong> Messaging platform for teams.</li>
-            <li><strong>Microsoft Teams:</strong> Collaboration platform by Microsoft.</li>
-            <li><strong>Jira:</strong> Issue and project tracking tool.</li>
-            <li><strong>Confluence:</strong> Collaboration and documentation tool.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Cloud Platforms</h2>
-        <p>Cloud platforms provide a variety of services for hosting, computing, and managing applications. Here's a brief overview of three major cloud providers:</p>
-
-        <h3>Amazon Web Services (AWS)</h3>
-        <p>AWS is a comprehensive cloud platform offering a wide range of services, including computing power, storage, databases, machine learning, and more. Popular services include Amazon EC2 (virtual servers), Amazon S3 (object storage), and AWS Lambda (serverless computing).</p>
-
-        <h3>Google Cloud Platform (GCP)</h3>
-        <p>GCP provides a suite of cloud services, including computing, storage, machine learning, and data analytics. Key offerings include Google Compute Engine (virtual machines), Google Cloud Storage, and Google Kubernetes Engine (managed Kubernetes).</p>
-
-        <h3>Microsoft Azure</h3>
-        <p>Azure is Microsoft's cloud platform offering services such as virtual machines, storage, databases, and AI. Azure services include Azure Virtual Machines, Azure Blob Storage, and Azure App Service (platform as a service).</p>
-
-        <h2>Comparison of Cloud Platforms</h2>
-        <table>
-            <tr>
-                <th>Feature</th>
-                <th>AWS</th>
-                <th>GCP</th>
-                <th>Azure</th>
-            </tr>
-            <tr>
-                <td>Compute</td>
-                <td>Amazon EC2</td>
-                <td>Google Compute Engine</td>
-                <td>Azure Virtual Machines</td>
-            </tr>
-            <tr>
-                <td>Storage</td>
-                <td>Amazon S3</td>
-                <td>Google Cloud Storage</td>
-                <td>Azure Blob Storage</td>
-            </tr>
-            <tr>
-                <td>Serverless</td>
-                <td>AWS Lambda</td>
-                <td>Google Cloud Functions</td>
-                <td>Azure Functions</td>
-            </tr>
-            <tr>
-                <td>Container Orchestration</td>
-                <td>Amazon EKS</td>
-                <td>Google Kubernetes Engine</td>
-                <td>Azure Kubernetes Service</td>
-            </tr>
-            <!-- Add more rows as needed -->
-        </table>
+        <p>Firewalls are a fundamental component of network security, providing a crucial defense against unauthorized access and cyber threats.</p>
     </section>
 
 </body>
