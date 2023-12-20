@@ -1,157 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Tools</title>
+    <title>Indian Cricket Team Stats</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-            color: #495057;
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
 
-        header {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+        table, th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
         }
 
-        h2 {
-            color: #343a40;
-            border-bottom: 2px solid #343a40;
-            padding-bottom: 8px;
-            margin-bottom: 16px;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #555;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 12px;
-        }
-
-        li strong {
-            color: #343a40;
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
+
 <body>
+    <h1>Indian Cricket Team Statistics</h1>
 
-    <header>
-        <h1>DEVOPS PROJECT</h1>
-    </header>
+    <table>
+        <tr>
+            <th>Player</th>
+            <th>Matches</th>
+            <th>Runs</th>
+            <th>Wickets</th>
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td>100</td>
+            <td>12000</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Rohit Sharma</td>
+            <td>90</td>
+            <td>9500</td>
+            <td>2</td>
+        </tr>
+        <!-- Add more rows for other players -->
+    </table>
 
-    <section>
-        <h2>Continuous Integration Tools</h2>
-        <p>Continuous Integration (CI) tools are used to automate the process of code integration and testing.</p>
-        <ul>
-            <li><strong>Jenkins:</strong> An open-source automation server.</li>
-            <li><strong>Travis CI:</strong> A CI service that integrates with GitHub repositories.</li>
-            <li><strong>CircleCI:</strong> A cloud-based CI/CD service.</li>
-            <li><strong>GitLab CI/CD:</strong> Integrated CI/CD platform built into GitLab.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Configuration Management Tools</h2>
-        <p>Configuration Management tools help manage and provision infrastructure as code.</p>
-        <ul>
-            <li><strong>Ansible:</strong> An open-source automation tool for configuration management.</li>
-            <li><strong>Chef:</strong> A powerful automation platform that manages infrastructure as code.</li>
-            <li><strong>Puppet:</strong> A configuration management tool for deploying, configuring, and managing servers.</li>
-            <li><strong>SaltStack:</strong> Automation and configuration management tool.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Containerization Tools</h2>
-        <p>Containerization tools enable packaging applications and their dependencies into containers.</p>
-        <ul>
-            <li><strong>Docker:</strong> An open platform for developing, shipping, and running applications in containers.</li>
-            <li><strong>Kubernetes:</strong> An open-source container orchestration platform.</li>
-            <li><strong>OpenShift:</strong> Kubernetes container platform with enterprise features.</li>
-            <li><strong>Podman:</strong> Container management tool.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Collaboration and Communication Tools</h2>
-        <p>Tools to facilitate communication and collaboration within development and operations teams.</p>
-        <ul>
-            <li><strong>Slack:</strong> Messaging platform for teams.</li>
-            <li><strong>Microsoft Teams:</strong> Collaboration platform by Microsoft.</li>
-            <li><strong>Jira:</strong> Issue and project tracking tool.</li>
-            <li><strong>Confluence:</strong> Collaboration and documentation tool.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Cloud Platforms</h2>
-        <p>Cloud platforms provide a variety of services for hosting, computing, and managing applications. Here's a brief overview of three major cloud providers:</p>
-
-        <h3>Amazon Web Services (AWS)</h3>
-        <p>AWS is a comprehensive cloud platform offering a wide range of services, including computing power, storage, databases, machine learning, and more. Popular services include Amazon EC2 (virtual servers), Amazon S3 (object storage), and AWS Lambda (serverless computing).</p>
-
-        <h3>Google Cloud Platform (GCP)</h3>
-        <p>GCP provides a suite of cloud services, including computing, storage, machine learning, and data analytics. Key offerings include Google Compute Engine (virtual machines), Google Cloud Storage, and Google Kubernetes Engine (managed Kubernetes).</p>
-
-        <h3>Microsoft Azure</h3>
-        <p>Azure is Microsoft's cloud platform offering services such as virtual machines, storage, databases, and AI. Azure services include Azure Virtual Machines, Azure Blob Storage, and Azure App Service (platform as a service).</p>
-
-        <h2>Comparison of Cloud Platforms</h2>
-        <table>
-            <tr>
-                <th>Feature</th>
-                <th>AWS</th>
-                <th>GCP</th>
-                <th>Azure</th>
-            </tr>
-            <tr>
-                <td>Compute</td>
-                <td>Amazon EC2</td>
-                <td>Google Compute Engine</td>
-                <td>Azure Virtual Machines</td>
-            </tr>
-            <tr>
-                <td>Storage</td>
-                <td>Amazon S3</td>
-                <td>Google Cloud Storage</td>
-                <td>Azure Blob Storage</td>
-            </tr>
-            <tr>
-                <td>Serverless</td>
-                <td>AWS Lambda</td>
-                <td>Google Cloud Functions</td>
-                <td>Azure Functions</td>
-            </tr>
-            <tr>
-                <td>Container Orchestration</td>
-                <td>Amazon EKS</td>
-                <td>Google Kubernetes Engine</td>
-                <td>Azure Kubernetes Service</td>
-            </tr>
-            <!-- Add more rows as needed -->
-        </table>
-    </section>
-
+    <p>Disclaimer: The statistics are for illustrative purposes only and may not reflect real-time data.</p>
 </body>
+
 </html>
